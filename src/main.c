@@ -31,7 +31,7 @@ main(int argc, char** argv)
     GtkApplication* app = NULL;
     int status;
 
-    app = gtk_application_new("com.theaifam5.neovim-gtk",
+    app = gtk_application_new("com.theaifam5.neovim-gtk3",
                               G_APPLICATION_FLAGS_NONE);
 
     g_signal_connect(app, "activate", G_CALLBACK(activate), NULL);
