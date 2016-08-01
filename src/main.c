@@ -101,6 +101,7 @@ nvim_exited(VteTerminal* vteterminal, gint status, gpointer user_data)
         gtk_window_close(GTK_WINDOW(toplevel));
 }
 
+//Source: http://stackoverflow.com/a/23497087
 static GtkWidget*
 find_child(GtkWidget* parent, const gchar* name)
 {
