@@ -23,8 +23,6 @@ static void nvim_exited(VteTerminal* vteterminal,
                         gint status,
                         gpointer user_data);
 
-static GMutex g_resize_lock;
-
 int
 main(int argc, char** argv)
 {
@@ -46,7 +44,6 @@ static void
 activate(GtkApplication* app, gpointer user_data)
 {
     GtkWidget *window = NULL, *vte = NULL;
-    GError* error = NULL;
 
     // Initialize
     window = gtk_application_window_new(app);
